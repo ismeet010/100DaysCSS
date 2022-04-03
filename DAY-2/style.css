@@ -1,0 +1,29 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0.1);
+  overflow: hidden;
+  background: rgb(104, 190, 147);
+  color: #333;
+}
+
+.center{
+    position: absolute;
+    top: 40%;
+    left: 36%;
+}
+.center div{
+    background-color: white;
+    width: 100px;
+    height: 10px;
+    border-radius: 4px;
+    margin: 8px 0;
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+}
+
