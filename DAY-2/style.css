@@ -15,15 +15,97 @@
 
 .center{
     position: absolute;
-    top: 40%;
-    left: 36%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
-.center div{
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.bar{
     background-color: white;
     width: 100px;
     height: 10px;
     border-radius: 4px;
-    margin: 8px 0;
-    box-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transition: all .9s;
 }
 
+/* Initial */
+.menu .no-animation {
+	animation: none !important;
+}
+
+/* Animation */
+
+.menu.open div:nth-child(1) {
+	animation: bar1Animation 1s ease-in-out forwards;
+}
+.menu.open div:nth-child(2) {
+	transform: scale(0);
+	opacity: 0;
+}
+.menu.open div:nth-child(3) {
+	animation: bar3Animation 1s ease-in-out forwards;
+}
+@keyframes bar1Animation {
+	0%{
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(25px);
+	}
+	100% {
+		transform: translateY(25px) rotateZ(45deg);
+	}
+}
+
+@keyframes bar3Animation {
+	0%{
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-25px);
+	}
+	100% {
+		transform: translateY(-25px) rotateZ(135deg);
+	}
+}
+
+/* Reverse Animations*/
+
+.menu div:nth-child(1) {
+	animation: bar1ReverseAni 1s ease-in-out forwards;
+}
+.menu div:nth-child(3) {
+	animation: bar3ReverseAni 1s ease-in-out forwards;
+}
+
+@keyframes bar1ReverseAni {
+	0%{
+		transform: translateY(25px) rotateZ(45deg);
+	}
+	50% {
+		transform: translateY(25px) rotateZ(0deg);
+	}
+	100% {
+		transform: translateY(0);
+		
+	}
+}
+@keyframes bar3ReverseAni {
+	0%{
+		transform: translateY(-25px) rotateZ(135deg);
+	}
+	50% {
+		transform: translateY(-25px) rotateZ(0deg);
+	}
+	100% {
+		transform: translateY(0);
+		
+	}
+}
