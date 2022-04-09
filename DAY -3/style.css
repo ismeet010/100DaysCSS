@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  align-items: center;
+  background: #1f2022;
+  height: 400px;
+  width: 400px;
+}
+
+.circle{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+}
+
+.sky {
+    background: #008fd4;
+    height: 200px;
+    width: 200px;
+}
+
+.land{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background: #c9bb80;
+}
+
+.PyramidR{
+position: absolute;
+bottom: 65px;
+left: 50%;
+background-color: yellow;
+clip-path: polygon(0 0, 30% 100%,100% 100%);
+width: 60px;
+height: 60px;
+z-index: 2;
+}
+
+.PyramidL{
+    position: absolute;
+bottom: 65px;
+left: 25%;
+background-color: rgba(255, 255, 0, 0.596);
+clip-path: polygon(50% 0%, 0% 100%,100% 100%);
+width: 100px;
+height: 60px;
+z-index: 2;
+
+}
