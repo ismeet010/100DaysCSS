@@ -46,6 +46,8 @@
     background: #008fd4;
     height: 200px;
     width: 200px;
+    z-index: 11;
+    animation: skyani 5s ease-in-out infinite;
 }
 
 .land{
@@ -55,27 +57,72 @@
   right: 0;
   height: 65px;
   background: #c9bb80;
+  z-index: 10;
 }
 
 .PyramidR{
 position: absolute;
 bottom: 65px;
 left: 50%;
-background-color: yellow;
+background-color: #ac9c5d;
 clip-path: polygon(0 0, 30% 100%,100% 100%);
 width: 60px;
 height: 60px;
-z-index: 2;
+z-index: 10;
 }
 
 .PyramidL{
-    position: absolute;
+position: absolute;
 bottom: 65px;
 left: 25%;
-background-color: rgba(255, 255, 0, 0.596);
+background-color: #e9d587;
 clip-path: polygon(50% 0%, 0% 100%,100% 100%);
 width: 100px;
 height: 60px;
-z-index: 2;
-
+z-index: 9;
 }
+
+.sun {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: -45px;
+    bottom: 30px;
+    border-radius: 50%;
+    background: rgba(255, 238, 0, 0.774);
+    box-shadow: 0px 0px 5px 5px yellow;
+    z-index: 3;
+    transform-origin: 145px;
+    transform: rotate(20deg);
+    animation: sungoessleep 5s ease-in-out infinite;
+  }
+  @keyframes skyani {
+    0% {
+        background-color: orangered;
+    }
+    25% {
+      background-color: rgb(255, 166, 0);
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: rgb(255, 166, 0);
+    }
+    100% {
+      background-color: orangered;
+    }
+  }
+
+  @keyframes sungoessleep {
+  0% {
+    transform: rotate(20deg);
+  }
+  30%{
+    transform: rotate(70deg);
+  }
+  100% {
+    transform: rotate(160deg);
+  }
+}
+
