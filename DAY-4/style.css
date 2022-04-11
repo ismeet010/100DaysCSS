@@ -1,0 +1,92 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background: rgb(241, 86, 86);
+    color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .C1,.C2,.C3{
+      position: absolute;
+  }
+
+  .C1{
+    top: 130px;
+    left: 130px;
+    z-index: 2;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(87, 86, 86);
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: circle1 2s infinite alternate cubic-bezier(0.21, 0.98, 0.6, 0.99);
+  }
+
+  .C2{
+    top: 150px;
+    left: 150px;
+    z-index: 3;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(87, 86, 86);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    align-items: center;
+    animation-fill-mode: both;
+    animation: circle2 2s infinite alternate cubic-bezier(0.21, 0.98, 0.6, 0.99); 
+  }
+
+  .C3{
+    top: 170px;
+    left: 170px;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgb(87, 86, 86);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    animation-fill-mode: both;
+    animation: circle3 2s infinite alternate cubic-bezier(0.21, 0.98, 0.6, 0.99);
+    
+  }
+
+  @keyframes circle3 {
+	0%,70% {
+        transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		
+	}
+}
+
+@keyframes circle2 {
+	0%,40% {
+        transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		
+	}
+}
+
+@keyframes circle1 {
+	0%,20% {
+        transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		
+	}
+}
