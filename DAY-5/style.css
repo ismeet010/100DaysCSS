@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 6px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: rgb(102, 185, 183);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 300px;
+  transform: translate(-50%,-50%);
+  border-radius: 4px;
+  background: repeating-linear-gradient(rgb(235, 177, 62) 0%, rgb(235, 177, 62) 29.9%, white 30.1%, white 100%);
+  
+}
+.header{
+    display: flex;
+	justify-content:space-between;
+	background-color: #F1BA64;
+	color: #fff;
+	padding:15px;
+}
+
+#heading{
+    font-weight: 700;
+	font-size: 14px;
+}
+
+
