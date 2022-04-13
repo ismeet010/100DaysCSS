@@ -22,7 +22,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 200px;
+  height: 250px;
   width: 300px;
   transform: translate(-50%,-50%);
   border-radius: 4px;
@@ -41,5 +41,207 @@
     font-weight: 700;
 	font-size: 14px;
 }
+
+.parameter{
+  position:relative;
+  text-align:right;
+  padding:10px 0  10px 0;
+  font-size:9px;
+  line-height:14px;
+}
+.parameter span{
+  position:relative;
+  padding:0 10px 0 10px;
+}
+.parameter .red{
+ font-size:10px;
+  color: #606060;
+}
+.parameter .red:before{
+  content:"";
+  position:absolute;
+  width:13px;
+  height:3px;
+  background:#FA7373;
+  border-radius:5px;
+  left:-5px;
+  top:6px;
+}
+.parameter .blue{
+ font-size:10px;
+  color: #606060;
+}
+.parameter .blue:before{
+  content:"";
+  position:absolute;
+  width:13px;
+  height:3px;
+  background:#7BA2FF;
+  border-radius:5px;
+  left:-4px;
+  top:6px;
+}
+
+.statistic{
+  position:relative;
+  width:100%;
+  height:80px;
+  margin: 0 auto;
+}
+.card .statistic .line-1,.card .statistic .line-2,.card .statistic .line-3{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:1px;
+  background-color: rgb(190, 186, 186);
+}
+.card .statistic .line-2{
+  top:40px;
+}
+.card .statistic .line-3{
+  top:inherit;
+  bottom:0;
+}
+
+.card .statistic .data svg{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.card .statistic .data.red svg polyline{
+  
+  fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke:#FA7373;
+}
+.card .statistic .data.blue svg polyline{
+   fill:none;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke:#7BA2FF;
+}
+.card .statistic .data .tooltip{
+  position:absolute;
+  left:50%;
+  bottom:13px;
+  transform: translate3d(-50%, 10px, 0);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 11px;
+  color: #fff;
+  padding: 8px 6px;
+  border-radius: 3px;
+  visibility: hidden;
+  opacity: 0;
+  transition: transform 0.4s ease-out 0s, opacity 0.4s ease-out 0s;
+}
+.card .statistic .data .tooltip:after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 6px;
+  width: 6px;
+  left: 50%;
+  margin-left: -3px;
+  bottom: -3px;
+  transform: rotate(45deg);
+}
+.card .statistic .data [class^=point-] {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  z-index: 10;
+}
+.card .statistic .data [class^=point-]:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate3d(-50%, 0, 0);
+}
+.card .statistic .data.red [class^=point-], .card .statistic .data.red .tooltip, .card .statistic .data.red .tooltip:after {
+  background: #FA7373;
+}
+.card .statistic .data.red .point-1{
+  top:42px;
+  left:7px;
+}
+.card .statistic .data.red .point-2{
+  top:10px;
+  left:46px;
+}
+.card .statistic .data.red .point-3{
+  top:20px;
+  left:85px;
+}
+.card .statistic .data.red .point-4{
+  top:8px;
+  left:127px;
+}
+.card .statistic .data.red .point-5{
+  top:36px;
+  left:169px;
+}
+.card .statistic .data.red .point-6{
+  top:45px;
+  left:210px;
+}
+.card .statistic .data.red .point-7{
+  top:17px;
+  left:246px;
+}
+.card .statistic .data.blue [class^=point-], .card .statistic .data.blue .tooltip, .card .statistic .data.blue .tooltip:after {
+  background: #7BA2FF;
+}
+
+.card .statistic .data.blue .point-1{
+  top:58px;
+  left:5px;
+}
+.card .statistic .data.blue .point-2{
+  top:47px;
+  left:46px;
+}
+.card .statistic .data.blue .point-3{
+  top:62px;
+  left:86px;
+}
+.card .statistic .data.blue .point-4{
+  top: 52px;
+  left: 125px;
+}
+.card .statistic .data.blue .point-5{
+  top:58px;
+  left:167px;
+}
+.card .statistic .data.blue .point-6{
+  top:71px;
+  left:208px;
+}
+.card .statistic .data.blue .point-7{
+  top:60px;
+  left:250px;
+}
+.card .days{
+  width:290px;
+  margin:0 auto;
+  padding-top:20px;
+}
+
+.days .day{
+  display:block;
+  font-weight:300px;
+  font-size:9px;
+  text-transform:uppercase;
+  text-align:center;
+  float:left;
+  color:rgb(142, 140, 140);
+  width:14%;
+}
+
 
 
