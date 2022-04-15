@@ -31,3 +31,37 @@
     box-shadow: 4px 8px 10px 0 rgb(100, 94, 94);
     
   }
+
+  .left{
+    position: absolute;
+    float: left;
+    width: 65%;
+    display: block;
+    align-items: stretch;
+
+  }
+  .right{
+    float: right;
+    width: 35%;
+    display:block;
+    color: rgb(70, 38, 38);
+  }
+  .right .block{
+    
+    background-color: rgb(249, 211, 211);
+    height: 20%;
+    padding:20px;
+    margin-block: 4px;
+    }
+
+  .block:hover
+  {
+    background-color: rgb(210, 170, 170);
+  }
+
+  .num{
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+  
