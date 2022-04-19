@@ -1,0 +1,31 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+      box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+      overflow: hidden;
+    background-image: linear-gradient(rgb(18, 18, 35), rgb(53, 87, 138) );
+    color: #333;
+      font-family: 'Open Sans', Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .container {
+	background-image: linear-gradient(rgb(121, 168, 237) 0%, rgb(159, 193, 245) 20%, white 20.1%, white 100%);
+	position: absolute;
+	top: 50px;
+  left: 40px;
+	height: 299px;
+	width: 320px;
+	box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	display: flex;
+}
+  
